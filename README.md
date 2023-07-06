@@ -16,3 +16,9 @@ INSERT INTO clothes VALUES (4, "Shoes", 20, 30, 8);
 
 Select sum(quantity) from clothes;
 Select sum(price) from clothes
+
+
+sum(quantity)
+52
+sum(price)
+73
