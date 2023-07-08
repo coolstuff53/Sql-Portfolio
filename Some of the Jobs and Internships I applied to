@@ -1,0 +1,32 @@
+/** Table of  Some of the Jobs and Internships I applied to on LinkedIn **/
+
+CREATE TABLE applications( ID INTEGER PRIMARY KEY, NAME TEXT, Company_Name TEXT, Year INTEGER, Location TEXT);
+
+INSERT INTO applications( ID, NAME, Company_Name, Year, Location)
+    VALUES( 1, "Junior Data Analyst", "Staffigo", 2023, "Pittsburgh Pa") ; 
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    VALUES( 2, "Data Scientist", "ConnectiveRX", 2023, "Pittsburgh Pa");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    VALUES( 3, "Data Engineer (Entry Level)", "Patterned Learning AI", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    VALUES( 4, "Data Ops Analyst", "Advantasure", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    Values( 5, "Data Analyst", "Mainz Brady Group", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    Values( 6, "Data Intelligence", "Trace3", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    VALUES( 7, "Data Analyst", "Aditi Consulting", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    Values( 8, "Power BI Analyst", "Robert Half", 2023, "Remote");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    Values( 9, "Data Analyst", "Engine", 2023, "Pittsburgh");
+INSERT INTO applications( ID, NAME, Company_name, Year, Location)
+    Values( 10, "Data Scientist", "Tree Top Staffing LLC", 2023, "Remote");
+
+Select * From applications;
+
+Select Company_name from applications where location= "Remote";
+
+Select Name from applications where Name like 'D%';
+
+Select Company_Name from applications where location= "Pittsburgh Pa";
